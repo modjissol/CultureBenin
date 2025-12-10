@@ -21,7 +21,9 @@ $app = Application::configure(basePath: dirname(__DIR__))
 // Charger les alias personnalisés
 $aliases = require __DIR__.'/../config/aliases.php';
 foreach ($aliases as $alias => $class) {
-    class_alias($class, $alias);
+    if (!class_exists($alias)) {
+        class_alias($class, $alias);
+    }
 }
 
 return $app->create();

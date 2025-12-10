@@ -12,5 +12,5 @@ return [
     |
     */
 
-    'Number' => App\Services\NumberService::class,
+    'NumberService' => App\Services\NumberService::class,
 ];
