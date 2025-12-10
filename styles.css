@@ -1,0 +1,30 @@
+/* Notation étoilée */
+.rating .star {
+    font-size: 1.5em;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.rating .star.selected,
+.rating .star:hover,
+.rating .star:hover ~ .star {
+    color: #a259ff;
+}
+/* ...existing code... */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+/* ...existing code... */
+.header, .main-navbar, .main-content {
+    background: url('/adminlte/img/enf.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-navbar, .main-content {
+    background-color: transparent !important;
+}
+}

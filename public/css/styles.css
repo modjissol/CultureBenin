@@ -1,0 +1,19 @@
+/* Styles pour la bannière et la galerie d'images */
+.image-banner {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.gallery-img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
